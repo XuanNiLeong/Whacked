@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200,300,400,500,600,700,800,900,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 8%) 0px 4px 4px;
+}
+
+.navbar-brand{
+    padding-left: 15px;
+}
+
+.nav-link{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#navbarSupportedContent{
+    padding: 10px;
+}
+
+.nav-item{
+    padding: 15px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link{
+    border-radius: 10px;
+    background-color: #FFA800;
+    padding: 5px 15px;
+}
+
+/* contact page section starts here----------------------
+---------------------------------------------------------
+--------------------------------------------------------- */
+
+.col-1 h2{
+    font-family: 'Assistant';
+    font-size: 5vw;
+    margin: 2% 5%;
+}
+
+
+.col-1{
+    position: absolute;
+    left: 0px;
+    width: 50%;
+}
+
+
+
+.text{
+    
+    font-size: 2.5vw;
+    margin: 2% 5%;
+
+    
+}
+
+.col-2{
+   position: absolute;
+   right: 0px;
+   width: 50%;
+   margin-top: 2%;
+}
+
+
+
+.col-form-label{
+    font-size: 2.5vw;
+}
+
+.form-control{
+    margin: 2% 0%;
+}
+
+#name, #email{
+    padding: 1%;
+    border: 1px solid #CBCBCB;
+    resize: none;
+    overflow: hidden;
+    width: 60%;
+    
+}
+  
+#message{
+    padding: 1%;
+    border: 1px solid #CBCBCB;
+    resize: none;
+    overflow: hidden;
+    width: 65%;
+    height: 200px;
+
+}
+
+
+.submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 1% 0%;
+    padding: 1% 2%;
+    width:30%;
+    height: 30%;
+    background: #FFA800;
+    border: 2px solid #000000;
+    color: #ffff;
+    font-size: 2.2vw;
+    border-radius: 19px;
+    display: flex;
+    text-align: center;
+        
+}
+
+.submit:hover{
+     cursor: pointer;
+     border: 2px solid #FFA800;
+     background-color: white;
+     color:#FFA800 ;
+}
+
+
+
+.social-media {
+    padding: 10% 2%;
+}
+
+.social-media p {
+  font-size: 2.4vw;
+}
+
+.social-icons {
+    display: flex;
+    
+}
+
+.social-icons a {
+    width: 13%;
+    height: 13%;
+    border-radius:20%;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 22px -10px black;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 5%;
+    margin-top: 5%;
+    transition: 0.3s;
+}
+
+.social-icons img{
+    width:70%;
+    padding: 20% 10% 10%;
+
+}
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px) {
+
+
+    .col-1 h2{
+        text-align: center;
+        width: 100%;
+        margin-left: 50%;
+        font-size: 9vw;
+      
+    }
+
+    .text{
+        text-align: center;
+        width: 100%;
+        margin-left: 50%;
+        font-size: 4.2vw;
+      
+    }
+
+    .col-3 label{
+        font-size: 4.2vw;
+    }
+    
+    .col-3{
+        text-align: center;
+        width: 100%;
+        margin-top:70%;
+        margin-left: -50%;
+    }
+
+    #name, #email{
+        width: 90%;
+        
+    }
+      
+    #message{
+    
+        width: 90%;
+        height: 100px;
+    
+    }
+
+    .submit{
+        margin-top:10%;
+        margin-left: 40%;
+    }
+
+    .social-media p{
+
+        text-align: center;
+        width: 100%;
+       
+        
+
+    }
+
+    .social-media p {
+        font-size: 4.0vw;
+    }
+
+
+    .social-media{
+
+        text-align: center;
+        width: 100%;
+        margin-left: -50%;
+        margin-right: -50px;
+    }
+
+    
+
+    .social-icons a {
+        width: 20%;
+        height: 20%;   
+    }
+    
+    .social-icons img{
+        width:70%;
+    }
+    
+}
+
+/* footer section starts here-------
+--------------------------------- */
+.footer {
+    width: 100%;
+    height: 100px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    margin: auto;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-container p{
+    padding: 15px 0px;
+}

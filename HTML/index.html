@@ -1,0 +1,252 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Whacked</title>
+    <link rel= "stylesheet" href= "../CSS/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="../JS/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  </head>
+
+  <body>
+    
+    <header class="head"> 
+
+        <nav>
+  
+          <a id="logo" href="../HTML/index.html"><img src="../IMG/logo.png" alt="logo" width="55px" height="55px"></a>
+          <!-- hamburger menu -->
+          <button class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+          </button>
+          <!--Create nav bar on the landing page & link to other page-->
+          <ul class="links" id="links">
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/team.html">Team</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+            <li><a id="consult-button" href="../HTML/contact.html">Free consultation</a></li>
+          </ul>
+        </nav>
+  
+      </header>
+
+    <main>
+
+        <section class="landing"> 
+            <div>
+                <img src="../IMG/people.png" id="people" alt="people is sitting on the chair">
+                <h1>Build your <br>online influence</h1>
+                <p>Grow a powerful online presence and dominate your sector with content designed to convert.</p>
+                <button onclick="window.location.href=`https://calendly.com/whacked/consultation?month=2021-07`"; id="button">free consultation</button>
+            </div>
+        </section> 
+
+        <section class="banner">
+            <div>
+                <!-- <img src="../IMG/love.png" id="love" alt="image of like"> -->
+                <h1>You are the face of your brand, and we’re the team that helps you <b>build</b> it.<img src="../IMG/click.png" id="click" alt="click button" width="50px" height="50px"></h1>
+                <!-- <img src="../IMG/thumb-up.png" id="thumbup" alt="image of thumbup"> -->
+            </div>
+        </section>  
+
+       <section class="video-section">
+            <div>
+                <p>HOW IT WORKS</p>
+                <h3>whacked in 1 minute</h3>
+                <video id="video" controls>
+                <source src="../IMG/song.mp4" type="video/mp4">
+            </div>
+       </section> 
+       
+        <section class="service">
+            <h1>What we can do for you</h1>
+            <div class="point1">
+                <img src="../IMG/point1.png" id="img1">
+                 <h3>Weekly content ideas, so you always know what to say</h3>
+                 <p>We’ll work with you to identify topics in your niche and have weekly suggested topics to cover.</p>
+             </div>
+             
+             <div class="point2">
+               <img src="../IMG/point2.png" id="img2">
+               <h3>We’ll help you break down the content, polish it up and post it</h3>
+               <p>With carousels and videos edited professionally, to industry standards - tailored to your brand.</p>
+             </div>
+          
+             <div class="point3">
+               <img src="../IMG/point3.png" id="img3">
+               <h3>We’ll guide you through the data, so you know what matters</h3>
+               <p>Data-driven performance marketing means full transparency, so you know what’s working, with our monthly reports.</p>
+             </div> 
+        </section>
+
+         <section class="audience">
+            <div class="slider-wrapper">
+                Whacked's perfect for 
+                <div class="slider">
+                    <div class="slider-text1">sales professionals</div>
+                    <div class="slider-text2">entrepreneurs</div>
+                    <div class="slider-text3">teachers</div>
+                </div>
+            </div>
+        </section> 
+
+         <section class="testimonials">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+
+                <div class="slide">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="../IMG/andy.png" alt="Andy Peh">
+                        <div class="card-body">
+                            <div class="andy">
+                                <h1>Andy Peh</h1>
+                                <h2>3X MDRT 1X COT, MDRT FG Trainer at PIAS</h2>
+                                <p class="card-text">“ whacked has been the most amazing team I’ve ever worked with and they’re super cool. ” </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="../IMG/edward.png" alt="Edward Ong">
+                        <div class="card-body">
+                            <div class="ong">
+                                <h1>Edward Ong</h1>
+                                <h2>YOUTUBER, 100K SUBSCRIBERS AND SPOTIFY FINGERSTYLE GUITAR ARTIST, 250K MONTHLY STREAMS</h2>
+                                <p class="card-text">“ whacked has been the most amazing team I’ve ever worked with and they’re super cool. ” </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="../IMG/sim.png" alt="Sim Boon Wah">
+                        <div class="card-body">
+                            <div class="sim">
+                                <h1>Sim Boon Wah</h1>
+                                <h2>3X MDRT 1X COT, MDRT FG Trainer at PIAS</h2>
+                                <p class="card-text">“ whacked has been the most amazing team I’ve ever worked with and they’re super cool. ” </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+            </div>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+              
+        </section> 
+
+        <section class="team">
+            <div class="team-img">
+
+                <div class="ashvin">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="../IMG/ashvin.png" alt="ashvin" width="220px" height="220px">
+                            </div>
+        
+                            <div class="flip-box-back">
+                                <div class="flip-box-back-name">                       
+                                </div>
+                                <img src="../IMG/lizzie.png" alt="ashvin" width="220px" height="220px">
+                            </div>   
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="lizzie">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="../IMG/lizzie.png" alt="ashvin" width="220px" height="220px">
+                            </div>
+        
+                            <div class="flip-box-back">
+                                <div class="flip-box-back-name">                       
+                                </div>
+                                <img src="../IMG/ashvin.png" alt="ashvin" width="220px" height="220px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jing">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="../IMG/jing1.jpg" alt="jing wen" width="220px" height="220px">
+                            </div>
+        
+                            <div class="flip-box-back">
+                                <div class="flip-box-back-name">                        
+                                </div>
+                                <img src="../IMG/jing2.jpg" alt="jing wen" width="220px" height="220px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="xuan">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="../IMG/xuan.jpg" alt="ashvin" width="220px" height="220px">
+                            </div>
+        
+                            <div class="flip-box-back">
+                                <div class="flip-box-back-name">                       
+                                </div>
+                                <img src="../IMG/jing1.jpg" alt="ashvin" width="220px" height="220px">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="rynn">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="../IMG/rynn.jpg" alt="rynn" width="220px" height="220px">
+                            </div>
+        
+                            <div class="flip-box-back">
+                                <div class="flip-box-back-name">                       
+                                </div>
+                                <img src="../IMG/jing1.jpg" alt="ashvin" width="220px" height="220px">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section class="team-text">
+            <h1>You're in good hands</h1>
+            <p>Our team of experienced social media managers, marketers, graphics designers, video editors, copywriters and software developers will be there with you every step in the way.</p>
+            <a href="../HTML/team.html">Meet the team</a>
+        </section> 
+
+        <section class="consultation">
+            <h1>Book your free 20 minutes personal branding consultation today!</h1>
+            <p>In the call we’ll assess your LinkedIn profile and social media profile and give actionable feedback you can use to get started right away. No strings attached.</p>
+            <a href="https://calendly.com/whacked/book">Book a slot</a>
+        </section> 
+
+    </main>
+ 
+    <footer>
+        <p>&copy; copyright whacked, a kaya studio brand, 2021</p>
+    </footer>
+
+
+  </body>
+</html>
