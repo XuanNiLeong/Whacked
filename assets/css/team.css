@@ -33,3 +33,143 @@ header{
     padding: 5px 15px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200,300,400,500,600,700,800,900,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+.about-us{
+    margin: 3%;
+}
+
+.our-story{
+    margin: 3%;
+
+}
+
+.about-us h2{
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Assistant';
+
+}
+
+.our-story h2{
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Assistant';
+}
+
+.meet-the-team h2{
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Assistant';
+}
+
+
+.about-us p{
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    margin-top: -5%;
+}
+
+.our-story p{
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    margin-top: -5%;
+}
+
+.meet-the-team p{
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    margin-top: -5%;
+}
+
+
+.column {
+    float: left;
+    width:35%;
+    margin:2% 7.5%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.card {
+    position: relative;
+    width: 100%;
+    padding-bottom: 10%;
+}
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 70%;
+    padding: 10% 0% 0% 15%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+   
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.team-text a{
+    
+    color: #000;
+    font-size: 2vw;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 4px;
+
+}
+
+  
+.container:hover .image {
+    opacity: 0.5;
+}
+  
+.container:hover .middle {
+    opacity: 1;
+}
+  
+
+.title {
+    color: grey;
+}
+
+.box{
+    margin: 0% 15%;
+}
+
+  
+.box h2{
+  font-size: 3.5vw;
+}
+
+
+.box p{
+    margin-top: -2%;
+    font-size: 2.2vw;
+}
+
+@media screen and (max-width: 448px) {
+
+    .column {
+        width: 100%;
+        display: block;
+      }
+}
+

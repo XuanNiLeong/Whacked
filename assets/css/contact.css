@@ -36,213 +36,296 @@ header{
 /* contact page section starts here----------------------
 ---------------------------------------------------------
 --------------------------------------------------------- */
-
-.col-1 h2{
-    font-family: 'Assistant';
-    font-size: 5vw;
-    margin: 2% 5%;
-}
-
-
-.col-1{
-    position: absolute;
-    left: 0px;
-    width: 50%;
-}
-
-
-
-.text{
-    
-    font-size: 2.5vw;
-    margin: 2% 5%;
-
-    
-}
-
-.col-2{
-   position: absolute;
-   right: 0px;
-   width: 50%;
-   margin-top: 2%;
-}
-
-
-
-.col-form-label{
-    font-size: 2.5vw;
-}
-
-.form-control{
-    margin: 2% 0%;
-}
-
-#name, #email{
-    padding: 1%;
-    border: 1px solid #CBCBCB;
-    resize: none;
-    overflow: hidden;
-    width: 60%;
-    
-}
-  
-#message{
-    padding: 1%;
-    border: 1px solid #CBCBCB;
-    resize: none;
-    overflow: hidden;
-    width: 65%;
-    height: 200px;
-
-}
-
-
-.submit{
+.contact {
+    background-position: center center;
+    background-size: cover;
     display: flex;
-    flex-direction: row;
+    -webkit-box-pack: center;
     justify-content: center;
-    text-align: center;
-    margin: 1% 0%;
-    padding: 1% 2%;
-    width:30%;
-    height: 30%;
-    background: #FFA800;
-    border: 2px solid #000000;
-    color: #ffff;
-    font-size: 2.2vw;
-    border-radius: 19px;
+    overflow: visible;
+    padding: 150px 50px;
+}
+
+.contact-container {
+    padding-top: 80px;
+    padding-bottom: 64px;
+    max-width: 1200px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact-row {
+    width: 100%;
     display: flex;
-    text-align: center;
-        
 }
 
-.submit:hover{
-     cursor: pointer;
-     border: 2px solid #FFA800;
-     background-color: white;
-     color:#FFA800 ;
-}
-
-
-
-.social-media {
-    padding: 10% 2%;
-}
-
-.social-media p {
-  font-size: 2.4vw;
-}
-
-.social-icons {
+.contact-col {
+    width: 100%;
     display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    padding-right: 48px;
+}
+
+.contact-h1 {
+    font-size: 3.5em;
+    line-height: 1.25;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-bottom: 32px;
+    min-width: 400px;
+}
+
+.contact-p {
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+    line-height: 2;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 1 1 0%;
+}
+
+.contact-form-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 19px;
+    border-radius: 20px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 48px;
+    max-width: 600px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.contact-form-container h2 {
+    font-size: 2em;
+    line-height: 1.25;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    padding-bottom: 30px;
+}
+
+.contact-form-container label {
+    padding-top: 30px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.button {
+    margin-top: 50px;
+	cursor: pointer;
+	border: none;
+	outline: none; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.button a{
+    font-size: 1em;
+    font-weight: 600;
+    padding: 15px;
+}
+
+  /* larger desktop size for contact page section starts-------------- */
+@media screen and (min-width: 1250px) {
+    .contact-form {
+        margin-right: 80px;
+    }
+}
+
+/* tablet size for contact page section starts------------- */
+@media screen and (max-width: 990px) {
+    .contact {
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
     
+    .contact-row {
+        width: 100%;
+        min-width: auto;
+        max-width: 100%;
+        flex-basis: auto;
+        flex-wrap: wrap;
+    }
+    
+    .contact-col {
+        width: 100%;
+        min-width: auto;
+        max-width: 100%;
+        flex-basis: auto;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+    .contact-h1{
+        text-align: center;
+    }
+    
+    .contact-p {
+        text-align: center;
+    }
+    
+    .contact-form-container {
+        min-width: auto;
+        margin: 80px auto;
+        width: 100%;
+    }
+
 }
 
-.social-icons a {
-    width: 13%;
-    height: 13%;
-    border-radius:20%;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    box-shadow: 0px 0px 22px -10px black;
-    text-align: center;
-    line-height: 35px;
-    margin-right: 5%;
-    margin-top: 5%;
-    transition: 0.3s;
-}
-
-.social-icons img{
-    width:70%;
-    padding: 20% 10% 10%;
-
-}
-.social-icons a:hover {
-    transform: scale(1.1);
-}
-
+/* extra breakpoint for contact page section starts------------- */
 @media screen and (max-width: 700px) {
-
-
-    .col-1 h2{
-        text-align: center;
-        width: 100%;
-        margin-left: 50%;
-        font-size: 9vw;
-      
-    }
-
-    .text{
-        text-align: center;
-        width: 100%;
-        margin-left: 50%;
-        font-size: 4.2vw;
-      
-    }
-
-    .col-3 label{
-        font-size: 4.2vw;
+    .contact-h1 {
+        font-size: 3em;
     }
     
-    .col-3{
-        text-align: center;
+    .contact-p {
+        font-size: 1.1em;
+    }
+    
+    .contact-form {
         width: 100%;
-        margin-top:70%;
-        margin-left: -50%;
-    }
-
-    #name, #email{
-        width: 90%;
-        
-    }
-      
-    #message{
-    
-        width: 90%;
-        height: 100px;
-    
-    }
-
-    .submit{
-        margin-top:10%;
-        margin-left: 40%;
-    }
-
-    .social-media p{
-
-        text-align: center;
-        width: 100%;
-       
-        
-
-    }
-
-    .social-media p {
-        font-size: 4.0vw;
-    }
-
-
-    .social-media{
-
-        text-align: center;
-        width: 100%;
-        margin-left: -50%;
-        margin-right: -50px;
-    }
-
-    
-
-    .social-icons a {
-        width: 20%;
-        height: 20%;   
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        flex: 1 1 0%;
+        padding: 0px 20px;
     }
     
-    .social-icons img{
-        width:70%;
+    .contact-form-container {
+        max-width: 450px;
+    }
+    
+    .contact-form-container h2 {
+        font-size: 1.8em;
+    }
+    
+    input[type=text], select, textarea {
+        padding: 10px;
+    }
+    
+    .button a{
+        font-size: 0.8em;
+    } 
+}
+
+/*mobile size for contact page section starts------------- */
+@media screen and (max-width: 448px) {
+    .contact-h1 {
+        font-size: 2em;
+    }
+    
+    .contact-p {
+        font-size: 1em;
+        line-height: 1.3;
+    }
+    
+    .contact-form {
+        padding: 0px 30px;
+    }
+    
+    .contact-form-container h2 {
+        font-size: 1.5em;
+    }
+    
+    input[type=text], select, textarea {
+        padding: 8px;
+    }
+}
+
+/* social media icon starts here-------------- */
+.icons {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 75%;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-top: 100px;
+}
+
+.icon-1 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* tablet size for icon section starts------------- */
+@media screen and (max-width: 990px) {
+    .icons {
+        width: 45%;
+        margin-top: 0px;
+    }
+    
+    .icon-1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }   
+}
+
+/* extra breakpoint for icon section starts------------- */
+@media screen and (max-width: 700px) {
+    .icons {
+        width: 70%;
+        margin-top: 0px;
+    }
+    
+    .icon-1 {
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/*mobile size for icon section starts------------- */
+@media screen and (max-width: 448px) {
+    .icons {
+        width: 80%;
+        margin-top: 0px;
+    }
+    
+    .icon-1 {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
 }
+
 
 /* footer section starts here-------
 --------------------------------- */

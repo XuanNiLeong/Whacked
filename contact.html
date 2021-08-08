@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
     <!-- Button -->
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css">
-
+    <!-- Contact Form -->
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+<link href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
   </head>
 
   <body>
@@ -20,7 +22,7 @@
 
         <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="/wp-content/themes/whacked/code/index.html"><img src="/wp-content/themes/whacked/code/assets/images/logo.png" alt="logo" width="55px" height="55px"></a>
+            <a class="navbar-brand" href="/wp-content/themes/whacked/code/index.html"><img src="/assets/images/logo.png" alt="logo" width="55px" height="55px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,62 +48,57 @@
   
       </header>
     
-
     <main>
-        <section>
-        <div class="content">
-          <div class="container">
-            <!-- <div class="row"> -->
-              <!-- <div class="col-1"> -->
-                <h2>Get in touch</h2>
-                <p class="text">Have questions? Drop us a quick message!<br> We don’t bite, promise 😉</p>
-              <!-- </div> -->
-            <!-- </div> -->
-          </div>
 
-            <!-- <div class="col-2"> -->
-              <!-- <div class="col-3"> -->
-                  <!-- <div class="row"> -->
-                    <!-- <div class="col-4"> -->
-                      <label for="name" class="col-form-label">Name</label><br>
-                      <input type="text" class="form-control" name="name" id="name">
-                    <!-- </div> -->
-                  <!-- </div> -->
-                  <!-- <div class="row"> -->
-                    <!-- <div class="col-md-12 form-group"> -->
-                      <label for="email" class="col-form-label">Email</label><br>
-                      <input type="text" class="form-control" name="email" id="email">
-                    <!-- </div> -->
-                  <!-- </div> -->
+      <section class="contact">
+        <div class="contact-container" width="normal">
+          <div class="contact-row">
+            <div class="contact-col" direction="column">
+              <h1 class="contact-h1">Get in touch</h1>
+              <p font-weight="medium" class="contact-p">Have questions? Drop us a quick message!<br> We don’t bite, promise 😉</p>
+              <div class="icons">
+                <div class="icon-1" id="1" width="20px" height="20px"><a href="https://discord.gg/8QxRWuA9"><img src="/assets/images/discord.png" alt="discord" width="100%"></a></div>
+                <div class="icon-1" id="2" width="20px" height="20px"><a><img src="/assets/images/email.png" alt="email" width="100%" ></a></div>
+                <div class="icon-1" id="3" width="20px" height="20px"><a><img src="/assets/images/insta.png" alt="instagram"  width="100%"></a></div>
+                <div class="icon-1" id="4" width="20px" height="20px"><a href="https://www.linkedin.com/company/whackedco/"><img src="/assets/images/linkedin.png" width="100%" alt="linkedin"></a></div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <div class="form">
+                  <form action="/action_page.php" id="form">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+                    <div class="button">
+                      <button class = "bttn-pill bttn-md bttn-warning"><a>Submit</a></button>
+                    </div>
+                  </form>
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
       
-                  <!-- <div class="row"> -->
-                    <!-- <div class="col-md-12 form-group"> -->
-                      <label for="message" class="col-form-label">Message</label><br>
-                      <textarea class="form-control" name="message" id="message"></textarea>
-                    <!-- </div> -->
-                  <!-- </div> -->
-                  <!-- <div class="row"> -->
-                    <!-- <div class="col-md-12"> -->
-                      <input type="submit" class="submit">
-                      <span class="submitting"></span>
-                    <!-- </div> -->
-                  <!-- </div> -->
-             </div>
-             <div class="social-media">
-               <p>Connect with us : </p>
-              <div class="social-icons"> <a href="https://discord.gg/8QxRWuA9"><img src="/assets/images/discord.png" alt="discord" ></a> <a><img src="/assets/images/email.png" alt="email" width="100%" > </a> <a><img src="/assets/images/insta.png" alt="instagram"  width="100%"></a><a href="https://www.linkedin.com/company/whackedco/"><img src="/assets/images/linkedin.png" alt="linkedin"></a> </div>
-        <!-- </div> -->
-      <!-- </div> -->
-    </section>
       </main>
 
-      <!-- <footer class="footer">
+      <footer class="footer">
         <div class="footer-container">
           <p>&copy; copyright whacked, a kaya studio brand, 2021</p>
         </div>
-      </footer> -->
+      </footer>
 
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
