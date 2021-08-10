@@ -1,5 +1,6 @@
+@import "compass/css3";
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200,300,400,500,600,700,800,900,1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
 
 header{
     position: fixed;
@@ -9,7 +10,7 @@ header{
 }
 
 .navbar-brand{
-    padding-left: 15px;
+    padding-left: 55px;
 }
 
 .nav-link{
@@ -26,11 +27,27 @@ header{
     padding: 15px;
 }
 
-.navbar-light .navbar-nav .nav-item .nav-link:hover,
-.navbar-light .navbar-nav .nav-item.active .nav-link{
+.navbar-toggler{
+   margin-right: 55px;
+}
+
+#free-consultation{
+    padding-right: 55px;
+}
+
+.nav-item.active .nav-link {
     border-radius: 10px;
     background-color: #FFA800;
-    padding: 5px 15px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+.nav-item .nav-link{
+    color: black!important;
+}
+
+.nav-item .nav-link:hover{
+    color: grey!important;
 }
 
 /* team page text section starts here----------------------
@@ -100,6 +117,9 @@ header{
         padding: 10px 20px;
     }
 
+    .meet-the-team-container{
+        padding-bottom: 60px;
+    }
 }
 
 /* mobile size for text section starts------------- */
@@ -111,6 +131,10 @@ header{
     .about-us-container p, .our-story-container p, .meet-the-team-container p{
         font-size: 1em;
         padding: 10px 20px;
+    }
+
+    .meet-the-team-container{
+        padding-bottom: 30px;
     }
 }
 
@@ -125,7 +149,7 @@ header{
 }
 
 .column {
-    width: 42%;
+    width: 40%;
     margin: auto;
 }
 
@@ -136,7 +160,7 @@ header{
 }
 
 .row{
-    padding: 50px 0px ;
+    padding: 50px 0px;
 }
   
 .image {
@@ -158,7 +182,6 @@ header{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-
 }
 
 .team-text a{
@@ -178,7 +201,6 @@ header{
     opacity: 1;
 }
   
-
 .title {
     color: grey;
 }
@@ -186,7 +208,6 @@ header{
 .box{
     margin: 5px 10px;
 }
-
   
 .box h2{
   font-size: 3vw;
@@ -194,320 +215,136 @@ header{
 }
 
 .box p{
-    /* margin-top: -2%; */
     font-size: 2vw;
 }
 
-@media screen and (max-width: 448px) {
+/* larger desktop screen for team picture section---------------- */
+@media screen and (min-width: 1250px) {
+
+    .team-picture{
+        padding: 0px 100px;
+    }
 
     .column {
+        width: 35%;
+        margin: auto;
+    }
+
+    .team-text a{
+        font-size: 1.8vw;
+    }
+
+    .box h2{
+        font-size: 2.5vw;
+        font-weight: 900;
+    }
+      
+      .box p{
+          font-size: 1.5vw;
+    }
+}
+
+/* tablet screen for team picture section---------------- */
+@media screen and (max-width: 990px) {
+    .team-picture{
+        padding: 0px 100px;
+    }
+    
+    .column {
+        width: 70%;
+        padding-bottom: 100px;
+    }
+    
+    .card {
+        padding-bottom: 5%;
+    }
+    
+    .row{
+        display: flex;
+        padding: 50px 0px ;
+    }
+
+    .image {
+        padding: 25px 15px;
+    }
+      
+    .middle {
+        top:35%;
+        left: 50%;
+    }
+    
+    .title {
+        color: grey;
+    }
+    
+    .box{
+        margin: 5px 10px;
+    }
+}
+
+/* extra breakpoint for team picture section---------------- */
+@media screen and (max-width: 700px) {
+    .team-picture{
+        padding: 0px 100px;
+    }
+    
+    .column {
         width: 100%;
-        display: block;
+    }
+    
+    .card {
+        padding-bottom: 5%;
+    }
+    
+    .row{
+        padding: 25px 0px ;
+    }
+
+    .box h2{
+        font-size: 3.5vw;
+        font-weight: 900;
+      }
+      
+      .box p{
+          font-size: 2.5vw;
       }
 }
 
-
-
-
-
-
-
-
-
-
-.contact {
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    overflow: visible;
-    padding: 150px 50px;
-}
-
-.contact-container {
-    padding-top: 80px;
-    padding-bottom: 64px;
-    max-width: 1200px;
-    width: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.contact-row {
-    width: 100%;
-    display: flex;
-}
-
-.contact-col {
-    width: 100%;
-    display: flex;
-    flex: 1 1 0%;
-    flex-direction: column;
-    padding-right: 48px;
-}
-
-.contact-h1 {
-    font-size: 3.5em;
-    line-height: 1.25;
-    font-weight: 900;
-    letter-spacing: -0.01em;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    margin-bottom: 32px;
-    min-width: 400px;
-}
-
-.contact-p {
-    letter-spacing: -0.01em;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    font-size: 1.3em;
-    line-height: 2;
-    font-weight: 500;
-    margin-bottom: 32px;
-}
-
-.contact-form {
-    width: 100%;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    flex: 1 1 0%;
-}
-
-.contact-form-container {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    box-shadow: rgb(0 0 0 / 25%) 0px 4px 19px;
-    border-radius: 20px;
-    padding-left: 48px;
-    padding-right: 48px;
-    padding-top: 48px;
-    max-width: 600px;
-    height: 800px;
-    overflow: hidden;
-}
-
-.contact-form-container h2 {
-    font-size: 2em;
-    line-height: 1.25;
-    font-weight: 900;
-    letter-spacing: -0.01em;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    padding-bottom: 30px;
-}
-
-.contact-form-container label {
-    padding-top: 30px;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-.button {
-    margin-top: 50px;
-	cursor: pointer;
-	border: none;
-	outline: none; 
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.button a{
-    font-size: 1em;
-    font-weight: 600;
-    padding: 15px;
-}
-
-  /* larger desktop size for contact page section starts-------------- */
-@media screen and (min-width: 1250px) {
-    .contact-form {
-        margin-right: 80px;
-    }
-}
-
-/* tablet size for contact page section starts------------- */
-@media screen and (max-width: 990px) {
-    .contact {
-        margin-left: 0px;
-        padding-left: 0px;
-        margin-right: 0px;
-        padding-right: 0px;
+/* mobile screen for team picture section---------------- */
+@media screen and (max-width: 448px) {
+    .team-picture{
+        padding: 0px 60px;
     }
     
-    .contact-row {
-        width: 100%;
-        min-width: auto;
-        max-width: 100%;
-        flex-basis: auto;
-        flex-wrap: wrap;
-    }
-    
-    .contact-col {
-        width: 100%;
-        min-width: auto;
-        max-width: 100%;
-        flex-basis: auto;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        align-items: center;
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-    
-    .contact-h1{
-        text-align: center;
-    }
-    
-    .contact-p {
-        text-align: center;
-    }
-    
-    .contact-form-container {
-        min-width: auto;
-        margin: 80px auto;
+    .column {
         width: 100%;
     }
-
-}
-
-/* extra breakpoint for contact page section starts------------- */
-@media screen and (max-width: 700px) {
-    .contact-h1 {
-        font-size: 3em;
-    }
     
-    .contact-p {
-        font-size: 1.1em;
-    }
-    
-    .contact-form {
-        width: 100%;
+    .row{
         display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        flex: 1 1 0%;
-        padding: 0px 20px;
+        padding: 25px 0px ;
     }
-    
-    .contact-form-container {
-        max-width: 450px;
-    }
-    
-    .contact-form-container h2 {
-        font-size: 1.8em;
-    }
-    
-    input[type=text], select, textarea {
-        padding: 10px;
-    }
-    
-    .button a{
-        font-size: 0.8em;
-    } 
-}
 
-/*mobile size for contact page section starts------------- */
-@media screen and (max-width: 448px) {
-    .contact-h1 {
-        font-size: 2em;
+    .image {
+        padding: 20px 10px;
     }
-    
-    .contact-p {
-        font-size: 1em;
-        line-height: 1.3;
+
+    .team-text a{
+        font-size: 4vw;
     }
-    
-    .contact-form {
-        padding: 0px 30px;
+
+    .box h2{
+        font-size: 4.5vw;
     }
-    
-    .contact-form-container h2 {
-        font-size: 1.5em;
-    }
-    
-    input[type=text], select, textarea {
-        padding: 8px;
+      
+    .box p{
+          font-size: 3.5vw;
     }
 }
 
-/* social media icon starts here-------------- */
-.icons {
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 75%;
-    margin-left: -16px;
-    margin-right: -16px;
-    margin-top: 100px;
-}
-
-.icon-1 {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/* tablet size for icon section starts------------- */
-@media screen and (max-width: 990px) {
-    .icons {
-        width: 45%;
-        margin-top: 0px;
-    }
-    
-    .icon-1 {
-        padding-left: 20px;
-        padding-right: 20px;
-    }   
-}
-
-/* extra breakpoint for icon section starts------------- */
-@media screen and (max-width: 700px) {
-    .icons {
-        width: 70%;
-        margin-top: 0px;
-    }
-    
-    .icon-1 {
-        justify-content: center;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-/*mobile size for icon section starts------------- */
-@media screen and (max-width: 448px) {
-    .icons {
-        width: 80%;
-        margin-top: 0px;
-    }
-    
-    .icon-1 {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-}
-
-
-/* footer section starts here-------
---------------------------------- */
+/* footer section starts here----------------------------
+---------------------------------------------------------
+--------------------------------------------------------- */
 .footer {
     width: 100%;
     height: 100px;
@@ -517,6 +354,7 @@ input[type=text], select, textarea {
     justify-content:center;
     text-align: center;
     align-items: center;
+    margin-top: 120px;
 }
 
 .footer-container p{

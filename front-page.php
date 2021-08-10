@@ -14,7 +14,7 @@ get_header();
               <h1>Build your <br> online influence</h1>
               <p>Grow a powerful online presence and dominate your sector with content designed to convert.</p>
               <div class="button">
-                <button class = "bttn-pill bttn-md bttn-warning"><a>Free Consultation</a></button>
+                <button class = "bttn-pill bttn-md bttn-warning"><a href="https://calendly.com/whacked/book">Free Consultation</a></button>
               </div>
             </div>
 
@@ -34,7 +34,7 @@ get_header();
             <img src="/wp-content/themes/whacked/code/assets/images/love.png" id="love" alt="image of like" >
           </div>
           <h1>You are the face of your brand, and we’re the team that helps you <span>build</span> it.
-              <img src="/wp-content/themes/whacked/code/assets/images/click.png" id="click" alt="click button" width="50px" height="50px">
+            <a href="/wp-content/themes/whacked/code/team.html"><img src="/wp-content/themes/whacked/code/assets/images/click.png" id="click" alt="click button" width="50px" height="50px"></a>
           </h1>
           <div class="banner-image-2">
             <img src="/wp-content/themes/whacked/code/assets/images/thumb-up.png" id="thumbup" alt="image of thumbup">
@@ -100,7 +100,7 @@ get_header();
 
       </section>
 
-      <!-- <section class="audience">
+      <section class="audience">
         <div class="audience-container">
           <div class="content">
             <div class="slider-wrapper">
@@ -113,7 +113,7 @@ get_header();
          </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="spacer">
       
@@ -193,7 +193,7 @@ get_header();
               <p>In the call we’ll assess your LinkedIn profile and social media profile and give actionable feedback you can use to get started right away. No strings attached.</p>
               <div class="button">
                 <button class = "bttn-pill bttn-md bttn-warning">
-                  <a href="../HTML/team.html">Meet the team</a>
+                  <a href="/wp-content/themes/whacked/code/team.html">Meet the team</a>
                 </button>
               </div>
             </div>
@@ -248,7 +248,7 @@ get_header();
       
     <footer class="footer">
       <div class="footer-container">
-        <p>&copy; copyright whacked, a kaya studio brand, 2021</p>
+      <p>&copy; 2021 whacked by kaya studio brand</p>
       </div>
     </footer>
 
