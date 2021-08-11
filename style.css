@@ -7,6 +7,7 @@ Author: Xuan Leong
 
 @import "compass/css3";
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200,300,400,500,600,700,800,900,1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap'); */
 
 header{
     position: fixed;
@@ -48,13 +49,14 @@ header{
     text-transform: uppercase;
 }
 
-.nav-item .nav-link{
+.nav-item a, .nav-item a:visited{
     color: black!important;
 }
 
-.nav-item .nav-link:hover{
+.nav-item a:hover{
     color: grey!important;
 }
+
 /* hero section starts ----------------------------------
 ---------------------------------------------------------
 --------------------------------------------------------
@@ -221,7 +223,8 @@ header{
         margin: auto;
         text-align: center;
         padding: 50px;
-        width: 90%;    }
+        width: 90%;   
+    }
 
     .hero p {
         font-size: 1.2em;
@@ -302,7 +305,7 @@ header{
 
 #love {
     animation: rotation 2s infinite alternate;
-  }
+}
   
 @keyframes rotation {
     from {
@@ -327,16 +330,16 @@ header{
 
 #thumbup {
     animation: rotation 2s infinite alternate;
-  }
+}
   
-  @keyframes rotation {
+@keyframes rotation {
     from {
       transform: rotate(-28.92deg);
     }
     to {
       transform: rotate(28.92deg);
     }
-  }
+}
 
 /* larger desktop size for banner starts-------------- */
 @media screen and (min-width: 1250px) {
@@ -762,30 +765,29 @@ header{
 }
 
 .slider{
-    height: 50px;
+    height: 60px;
     padding-left: 15px;
     overflow: hidden;   /* hide the text outside the slider div area */
 }
 
 .slider-text1 {
-    background: #FFA800;
+    color: #FFA800;
     animation: slide 7s linear infinite;
 }
 
 .slider-text2 {
-    background: #059A9D;
+    color: #059A9D;
 }
 
 .slider-text3 {
-    background: #08146E;
+    color: #08146E;
 }
 
 .slider div {
-    color:white;
     height: 50px;
+    margin-left: 10px;
     margin-bottom: 50px;
-    padding: 2px 15px;
-    text-align: center;
+    padding: 10px -50px;
     box-sizing: border-box;
 }
 
@@ -806,24 +808,37 @@ header{
     }
     
     .slider-wrapper {
-        font-size: 1.5em;
+        font-size: 2.5em;
+        display: block;
+    }
+
+    .slider div {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
 /* extra breakpoint for audience section starts------------- */
 @media screen and (max-width: 700px) {
     .content {
-        height: 80vh;
+        height: 70vh;
     }
-    
+
     .slider-wrapper {
-        font-size: 1.2em;
+        font-size: 2em;
     }
-} 
+}
 
 /* mobile size for audience section starts------------- */
 @media screen and (max-width: 448px) {
-    
+    .content {
+        height: 60vh;
+    }
+
+    .slider-wrapper {
+        font-size: 1.3em;
+    }
 } 
 
 
@@ -854,7 +869,7 @@ header{
  cursor: pointer;
 }
 
-.btn-theme {
+.btn-theme{
  background: var(--black);
  color: black;
 }

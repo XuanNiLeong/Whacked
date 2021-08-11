@@ -43,11 +43,11 @@ header{
     text-transform: uppercase;
 }
 
-.nav-item .nav-link{
+.nav-item a, .nav-item a:visited{
     color: black!important;
 }
 
-.nav-item .nav-link:hover{
+.nav-item a:hover{
     color: grey!important;
 }
 
@@ -112,6 +112,7 @@ header{
     -webkit-box-pack: center;
     justify-content: center;
     flex: 1 1 0%;
+    color: black;
 }
 
 .contact-form-container {
@@ -165,6 +166,8 @@ input[type=text], select, textarea {
     font-size: 1em;
     font-weight: 600;
     padding: 15px;
+    color: black;
+    text-decoration: none;
 }
 
   /* larger desktop size for contact page section starts-------------- */

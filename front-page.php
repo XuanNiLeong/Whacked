@@ -190,10 +190,10 @@ get_header();
             <!-- team text  -->
             <div class="team-col" width="auto">
               <h1>You're in good hands</h1>
-              <p>In the call we’ll assess your LinkedIn profile and social media profile and give actionable feedback you can use to get started right away. No strings attached.</p>
+              <p>Our team of experienced social media managers, marketers, graphics designers, video editors, copywriters and software developers will be there with you every step in the way.</p>              
               <div class="button">
                 <button class = "bttn-pill bttn-md bttn-warning">
-                  <a href="/wp-content/themes/whacked/code/team.html">Meet the team</a>
+                  <a href="../HTML/team.html">Meet the team</a>
                 </button>
               </div>
             </div>

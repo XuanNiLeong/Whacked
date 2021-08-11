@@ -1,7 +1,6 @@
 @import "compass/css3";
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200,300,400,500,600,700,800,900,1000&display=swap');
 
-
 header{
     position: fixed;
     z-index: 10;
@@ -42,11 +41,11 @@ header{
     text-transform: uppercase;
 }
 
-.nav-item .nav-link{
+.nav-item a, .nav-item a:visited{
     color: black!important;
 }
 
-.nav-item .nav-link:hover{
+.nav-item a:hover{
     color: grey!important;
 }
 
@@ -89,6 +88,10 @@ header{
     padding: 0;
     padding-bottom: 30px;
     width: 100%;
+}
+
+.about-us-container span{
+    font-weight: 700;
 }
 
 .meet-the-team-container{
