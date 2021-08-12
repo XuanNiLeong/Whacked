@@ -605,8 +605,9 @@ header{
 
 .service-image-1 img, .service-image-2 img, .service-image-3 img{
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
 }
 
 /* larger desktop size for service section starts------------- */
