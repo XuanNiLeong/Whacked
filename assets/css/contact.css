@@ -143,7 +143,7 @@ header{
     padding-top: 30px;
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -154,20 +154,15 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
-.button {
-    margin-top: 50px;
-	cursor: pointer;
-	border: none;
-	outline: none; 
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.button a{
-    font-size: 1em;
+input[type=submit] {
+    font-size: 0.8em;
     font-weight: 600;
-    padding: 15px;
+    padding: 5px 8px;
     color: black;
     text-decoration: none;
+    background: none;
+    box-sizing: none;
+    border: none;
 }
 
   /* larger desktop size for contact page section starts-------------- */
@@ -290,7 +285,7 @@ input[type=text], select, textarea {
     justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
-    width: 75%;
+    width: 60%;
     margin-left: -16px;
     margin-right: -16px;
     margin-top: 100px;
@@ -309,7 +304,7 @@ input[type=text], select, textarea {
 /* tablet size for icon section starts------------- */
 @media screen and (max-width: 990px) {
     .icons {
-        width: 45%;
+        width: 35%;
         margin-top: 0px;
     }
     
@@ -322,7 +317,7 @@ input[type=text], select, textarea {
 /* extra breakpoint for icon section starts------------- */
 @media screen and (max-width: 700px) {
     .icons {
-        width: 70%;
+        width: 45%;
         margin-top: 0px;
     }
     
@@ -334,9 +329,9 @@ input[type=text], select, textarea {
 }
 
 /*mobile size for icon section starts------------- */
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 560px) {
     .icons {
-        width: 80%;
+        width: 55%;
         margin-top: 0px;
     }
     

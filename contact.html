@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Responsive Website -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-    <link rel= "stylesheet" href="/wp-content/themes/whacked/code/assets/css/contact.css">
+    <link rel= "stylesheet" href="/assets/css/contact.css">
     <!-- Button -->
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css">
+    <!-- <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css"> -->
     <!-- Contact Form -->
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
-  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet"> -->
 </head>
 
   <body>
@@ -54,8 +54,7 @@
               <p font-weight="medium" class="contact-p">Have questions? Drop us a quick message!<br> We don’t bite, promise 😉</p>
               <div class="icons">
                 <div class="icon-1" id="1" width="20px" height="20px"><a href="https://discord.gg/8QxRWuA9"><img src="/wp-content/themes/whacked/code/assets/images/discord.png" alt="discord" width="100%"></a></div>
-                <div class="icon-1" id="2" width="20px" height="20px"><a><img src="/wp-content/themes/whacked/code/assets/images/email.png" alt="email" width="100%" ></a></div>
-                <div class="icon-1" id="3" width="20px" height="20px"><a><img src="/wp-content/themes/whacked/code/assets/images/insta.png" alt="instagram"  width="100%"></a></div>
+                <div class="icon-1" id="3" width="20px" height="20px"><a href="https://www.instagram.com/whack.co/"><img src="/wp-content/themes/whacked/code/assets/images/insta.png" alt="instagram"  width="100%"></a></div>
                 <div class="icon-1" id="4" width="20px" height="20px"><a href="https://www.linkedin.com/company/whackedco/"><img src="/wp-content/themes/whacked/code/assets/images/linkedin.png" width="100%" alt="linkedin"></a></div>
               </div>
             </div>
@@ -64,21 +63,19 @@
               <div class="contact-form-container">
                 <h2>Contact Us</h2>
                 <div class="form">
-                  <form action="/action_page.php" id="form" method="post">
+                  <form method="post" action="contact.php" class="form">
                     <label for="fname">Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="fname" name="name" placeholder="Your name..">
   
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    <input type="email" id="email" name="email" placeholder="Your email..">
   
                     <label for="subject">Message</label>
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
   
-                    <div class="button">
-                      <button class = "bttn-pill bttn-md bttn-warning"><a>Submit</a>
-                    </div>
+                    <input type="submit" value="Submit">
                   </form>
-              </div>
+                </div>
               </div>
             </div>
 
@@ -93,6 +90,8 @@
           <p>&copy; 2021 whacked by kaya studio brand</p>
         </div>
       </footer>
+
+  <script defer src="/wp-content/themes/whacked/code/assets/js/main.js"></script>
 
   <!-- Navigation -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
