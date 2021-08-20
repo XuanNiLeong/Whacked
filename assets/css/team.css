@@ -85,7 +85,8 @@ header{
     align-items: flex-start;
     flex-direction: column;
     width: auto;
-    min-width: 600px;
+    /* debugging starts hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+    /* min-width: 600px; */
     letter-spacing: -0.02em;
 }
 
@@ -220,18 +221,21 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #33344C;
 }
 
 .our-story-container{
     margin: auto;
+    padding: 150px 0px;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    max-width: 700px;
+    color: white;
 }
 
 .our-story-container h1{
+    text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 3.2em;
     line-height: 1.3;
@@ -240,17 +244,41 @@ header{
     padding: 0;
     padding-bottom: 30px;
     width: 100%;
+    color: #FFA800;
+    padding-bottom: 100px;
 }
 
 .our-story-container p{
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.3;
     margin: 0;
     padding: 0;
     padding-bottom: 30px;
     width: 100%;
 }
+
+.our-story-row{
+    display: flex;
+}
+
+.our-story-column{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 2000px;   
+
+}
+
+.our-story-image img{
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 50px;
+
+} 
 
 
 /* larger desktop size for text section starts-------------- */
@@ -263,28 +291,37 @@ header{
 /* tablet size for text section starts------------- */
 @media screen and (max-width: 990px) {
     .our-story-container{
-        padding-top: 150px;
+        padding: 100px 0px;
     }
     
     .our-story-container h1{
-        font-size: 2.5em;
+        font-size: 2.2em;
+        padding-bottom: 80px;
     }
-
+    
     .our-story-container p{
-        font-size: 1.2em;
-        padding: 10px 20px;
+        font-size: 1em;
     }
+    
+    .our-story-column{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .our-story-image img{
+        padding-bottom: 40px;
+    } 
 }
 
 /* mobile size for text section starts------------- */
 @media screen and (max-width: 448px) {
-    .our-story-container h1{
-        font-size: 2em;
+    .our-story-row{
+        display: block;
     }
 
-    .our-story-container p{
-        font-size: 1em;
-        padding: 10px 20px;
+    .our-story-image img{
+        width: 15%;
+        padding: 30px 0px;
     }
 }
 

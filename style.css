@@ -94,7 +94,8 @@ header{
     align-items: flex-start;
     flex-direction: column;
     width: auto;
-    min-width: 600px;
+    /* debugging spacesssssssssssssssssssssssssssssss */
+    /* min-width: 600px; */ 
     letter-spacing: -0.02em;
 }
 
@@ -1254,7 +1255,8 @@ font-family: 'Source Sans Pro', sans-serif;
     align-items: flex-start;
     flex-direction: column;
     width: auto;
-    min-width: 600px;
+    /* debugging starts hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+    /* min-width: 600px; */
     letter-spacing: -0.02em;
 }
 

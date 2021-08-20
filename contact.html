@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Responsive Website -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-    <link rel= "stylesheet" href="/assets/css/contact.css">
+    <link rel= "stylesheet" href="/wp-content/themes/whacked/code/assets/css/contact.css">
     <!-- Button -->
-    <!-- <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css"> -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css">
     <!-- Contact Form -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
-  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet"> -->
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
 </head>
 
   <body>
@@ -73,7 +73,8 @@
                     <label for="subject">Message</label>
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
   
-                    <input type="submit" value="Submit">
+                    <button class = "bttn-pill bttn-md bttn-warning"><input type="submit" name="email" value="Submit"></button>
+                    
                   </form>
                 </div>
               </div>
@@ -82,6 +83,17 @@
           </div>
         </div>
       </section>
+
+      <!-- <form method="POST" action="send.php" class="left" enctype="text/plain">
+        <input type="hidden" name="form-name" value="contact" />
+        <fieldset>
+            <label for="your_name">YOUR NAME *</label><input type="text"  id="your_name" name="your_name" class="required" /><br/>
+            <label for="your_email">YOUR email *</label><input type="text" id="your_email" name="your_email" class="required email" /><br/>
+            <label for="current_site">current site</label><input type="text" id="current_site" name="current_site" /><br/>
+            <label for="estimated_budget">estimated budget</label><input type="text" id="estimated_budget" name="estimated_budget" /><br/>
+            <label for="project_description">project description</label> <textarea id="project_description" name="project_description"></textarea><br/>
+            <input type="submit" name="email" value="send" id="sendbutton">
+        </fieldset> -->
       
       </main>
 
