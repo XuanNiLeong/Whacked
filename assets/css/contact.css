@@ -51,6 +51,17 @@ header{
     color: grey!important;
 }
 
+/* mobile size for hero section starts------------- */
+@media screen and (max-width: 448px) {
+    .navbar-brand{
+        padding-left: 20px;
+    }
+
+    .navbar-toggler{
+        margin-right: 20px;
+     }
+}
+
 /* contact page section starts here----------------------
 ---------------------------------------------------------
 --------------------------------------------------------- */
