@@ -492,6 +492,9 @@ header{
 }
 
 .box{
+    justify-content: left;
+    text-align: left;
+    align-items: left;
     margin: 5px 10px;
 }
   
@@ -509,8 +512,9 @@ header{
 #title {
     color: grey;
     padding-bottom: 25px;
-    justify-content: center;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
 }
 
 /* larger desktop screen for team picture section---------------- */
